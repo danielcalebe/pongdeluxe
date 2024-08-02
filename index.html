@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+ <link rel="stylesheet" href="characterS.css">
+ <script defer src="characterS.js"></script>
+    
+</head>
+<style>
+    /*Importando fontes do jogo*/
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    @import url('httpsL//fonts.googleapis.com/css2?family=Poppins&display=swap');
+    * {
+        font-family: 'Press Start 2P', sans-serif;
+    }
+   .l{
+        text-align: center;
+        position: fixed;
+        background-color: ghostwhite;
+        justify-content: center;
+        align-items: center;
+        height:auto;
+        flex-direction: column;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+
+       
+    }
+    body{
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+
+    }
+    .a{
+        position: relative;
+    }
+    
+   
+</style>
+<body> 
+    <!--Inserindo sons-->
+    <audio id="somComer" src="./images/comer.mp3"></audio>
+    <audio id="zelda" src="./images/zelda.mp3"></audio>
+
+    <!--Inserindo imagens-->
+    <audio id="go" src="./images/go.mp3"></audio>
+    <audio id="go2" src="./images/go2.mp3"></audio>
+    <audio id="go3" src="./images/go3.mp3"></audio>
+    <div>
+
+        <!--Cabeçalho-->
+    <img class='a'src="images/senai.png" alt="" srcset="" width="200px; style">
+    
+    <!--Game Board-->
+    <div class="l">
+        <br><br><br><br><br>
+        <h1>Pong Game</h1>
+        
+        <canvas ></canvas>
+        <br><br>
+        <p>Controle o jogador da esquerda usando W e S</p>
+        <br>
+        <p>Controle o jogador da direita usando Up e Down</p>
+        <br>
+        <button onclick="som()">Desligar Música</button>
+        <button onclick="somd()">Ligar Música</button>
+        <script src="script.js"></script>
+    </div>
+    
+    <!--Adicionando imagens no jogo-->
+    <img class='imagem'src="./images/luigi.png" alt="">
+    <img class='imagem2'src="./images/mario.png" alt="">
+    <img class='imagem3'src="./images/yoshi.png" alt="">
+    <img class='imagem4'src="./images/luigi2.png" alt="">
+    <img class='imagem5'src="./images/mario2.png" alt="">
+    <img class='imagem6'src="./images/yoshi2.png" alt="">
+    <img class='imagem7'src="./images/marcel.png" alt="">
+    <img class='imagem8'src="./images/marcel2.png" alt="">
+   
+    <p id='resultado1'></p>
+    <p id='resultado2'></p>
+
+    
+<div class="corpo">
+
+    <h1>Select the First Player Team</h1>
+   
+    <button class='botao' onclick="luigi()"> <img src="./images/luigi.png" alt=""></button>
+    <button class='botao' onclick="mario()"> <img src="./images/mario.png" alt=""></button>
+    <button class='botao' onclick="yoshi()"> <img src="./images/yoshi.png" alt=""></button>
+    <button class='botao' onclick="marcel()"> <img src="./images/marcel.png" alt=""></button>
+    
+</div>
+
+<div class="corpo2">
+    <h1>Select the Second Player Team</h1>
+    
+    <button class='botao' onclick="luigi2()"> <img src="./images/luigi2.png" alt=""></button>
+    <button class='botao' onclick="mario2()"> <img src="./images/mario2.png" alt=""></button>
+    <button class='botao' onclick="yoshi2()"> <img src="./images/yoshi2.png" alt=""></button>
+    <button class='botao' onclick="marcel2()"> <img src="./images/marcel2.png" alt=""></button>
+
+</div>
+
+<div class="corpo3">
+    <h1>Confirm?</h1>
+    <br>
+
+    <button  onclick="Nao()">No</button>
+    <button onclick="Sim()" onclick ="poha()">Yes</button>
+</div>
+
+
+
+   
+</body>
+</html>

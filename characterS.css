@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    margin: 25;
+    color: ghostwhite;
+}
+/* Seleção do primeiro player*/
+.corpo{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color:rgba(1, 92, 165, 0.8);
+    width: 750px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+/* seleção do segundo player*/
+.corpo2{
+    position: absolute;
+    display: none;
+    flex-direction: row;
+    background-color: #015CA5;
+    width: 200px;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    border-radius: 5px;
+
+    
+}
+/* Confirmação dos players*/
+.corpo3{
+    display: none;
+    position: absolute;
+    background-color: rgba(1, 92, 165, 0.7);
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.botao{
+    padding: 4px;
+    margin-left: 65px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #015ca5;
+ 
+}
+.botao:hover{
+    
+    padding: 4px;
+    margin-left: 65px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+ 
+}
+
+/* Seleção dos times*/
+.botao img{
+    width: 60px;
+}
+.botao img:hover{
+    transition-delay: 5ms;
+    transition-duration: 100ms;
+    width: 80px;
+
+    /* Fotos dos instrutores*/
+    
+}
+.imagem{
+    display: none;
+    position: absolute;
+    width: 8%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+ 
+    
+}
+.imagem2{
+    display: none;
+    position: absolute;
+    width: 8%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+}
+.imagem3{
+    display: none;
+    position: absolute;
+    width: 8%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+}
+.imagem4{
+    display: none;
+    position: absolute;
+    width: 8%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+}
+.imagem5{
+    display: none;
+    position: absolute;
+    width: 8%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+}
+.imagem6{
+    display: none;
+    position: absolute;
+    width: 8%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+}
+.imagem7{
+    display: none;
+    position: absolute;
+    width: 8%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+}
+.imagem8{
+    display: none;
+    position: absolute;
+    width: 8%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+}
+
+
+/* Nomes dos times*/
+#resultado1{
+    position: absolute;
+    margin-top: 335px;
+    margin-left: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+ 
+
+    
+}
+#resultado2{
+    position: absolute;
+    margin-top: 335px;
+    margin-left: 1500px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+  
+}
